@@ -17,9 +17,12 @@ export default function EditarProduto() {
   
   return (
     <main>
-        <h1>Editando o produto</h1>
-        <p>Editando os dados do produto: {produto.nome}</p>
-        <button onClick={salvar}>Salvar</button>
+        <h1>DADOS DO PRODUTO</h1>
+        <p>{produto.nome}</p>
+        <p>R${produto.preco}</p>
+        <p><img src={`${produto.img}`} alt={`${produto.nome}`} /></p>
+        <p>Detalhes do aparelho: </p>
+        <p>Memória RAM: {produto.ram}, Peso: {produto.peso}, Câmera Frontal: {produto.camera_frontal}, Câmera Traseira: {produto.camera_traseira}</p>
     </main>
   )
 }
