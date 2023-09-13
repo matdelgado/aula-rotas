@@ -21,8 +21,6 @@ export const ListaProdutos = [
         camera_frontal: "13MP",
         camera_traseira: "48MP + 8MP + 5MP"
     },
-
-    
     {
         id: 3,
         nome:'MOTOROLA MOTO G23 128GB',

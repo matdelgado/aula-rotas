@@ -1,12 +1,23 @@
+import { Link } from "react-router-dom"
+import { ListaProdutos } from "../../components/ListaProdutos"
+
 export default function Home() {
+
+  const aparelhoPromocao = ListaProdutos.slice(0, 2);
+
   return (
-    <>
-        <section>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa harum ratione distinctio illum doloremque dolorem ipsum optio, sed minima, quis totam vitae a iste. Repellat tempora rerum molestiae obcaecati eius.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis dolorum magni quae consequuntur, mollitia quis provident voluptate modi error accusamus aperiam excepturi cumque temporibus aut possimus. Non, possimus minus!</p>
-            </div>
-        </section>
-    </>
-  )
+    <main>
+      <h1>APROVEITE HOJE NOSSAS PROMOÇÕES!</h1>
+      {aparelhoPromocao.map(prod => (
+        <div key={prod.id}>
+          <Link to={`/produtos/editar/${prod.id}`}>
+              <p>{prod.nome}</p>
+              <p>Por apenas R$ {prod.preco}</p>
+              <p><img src={`${prod.img}`} alt={`${prod.nome}`} /></p>
+          </Link>
+        </div>
+      ))}
+    </main>
+  );
 }
+

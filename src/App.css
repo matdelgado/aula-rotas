@@ -9,9 +9,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,21 +41,40 @@
   color: #888;
 }
 
-nav{
-  display : flex ; width: 100vw;
-  justify-content: center; align-items: center;
-  height: 8vh; background-color: royalblue;
-
-  & a{color:white; font-size: 1.5em; padding: 15px;}
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background-color: royalblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-main{ display: flex; width: 100vw;
-  flex-direction: column; justify-content: center;
-  align-items: center; height: 70vh;
+nav a {
+  color: white;
+  font-size: 1.5em;
+  padding: 15px;
 }
 
-footer{
-  display: flex; width: 100vw; justify-content: center;
-  align-items: center; height: 5vh;
+main {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh; /* Ajuste a margem superior para dar espaço ao header */
+  min-height: calc(100vh - 8vh); /* Atualizado para ocupar o espaço restante da página */
+}
+
+footer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
   background-color: darkblue;
 }
