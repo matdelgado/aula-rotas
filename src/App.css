@@ -66,8 +66,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8vh; /* Ajuste a margem superior para dar espaço ao header */
-  min-height: calc(100vh - 8vh); /* Atualizado para ocupar o espaço restante da página */
+  margin-top: 8vh; 
+  min-height: calc(100vh - 8vh); 
 }
 
 footer {
