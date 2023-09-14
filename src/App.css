@@ -41,13 +41,17 @@
   color: #888;
 }
 
+.error {
+  padding: 50px;
+}
+
 nav {
   display: flex;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  height: 8vh;
-  background-color: royalblue;
+  height: 10vh;
+  background-color: rgb(0, 0, 0);
   position: fixed;
   top: 0;
   left: 0;
@@ -61,12 +65,12 @@ nav a {
 }
 
 main {
-  display: flex;
+  padding-top: 100px;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8vh; 
+  margin-top: 7vh; 
   min-height: calc(100vh - 8vh); 
 }
 
@@ -75,6 +79,9 @@ footer {
   width: 100vw;
   justify-content: center;
   align-items: center;
-  height: 5vh;
-  background-color: darkblue;
+  height: 7vh;
+  background-color: rgb(0, 0, 0);
+  color:white
 }
+
+

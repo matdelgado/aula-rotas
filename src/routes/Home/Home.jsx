@@ -9,8 +9,8 @@ export default function Home() {
     <main>
       <h1>APROVEITE HOJE NOSSAS PROMOÇÕES!</h1>
       {aparelhoPromocao.map(prod => (
-        <div key={prod.id}>
-          <Link to={`/produtos/editar/${prod.id}`}>
+        <div key={prod.id} class="style-product">
+          <Link to={`../produtos/editar/${prod.id}`} >
               <p>{prod.nome}</p>
               <p>Por apenas R$ {prod.preco}</p>
               <p><img src={`${prod.img}`} alt={`${prod.nome}`} /></p>

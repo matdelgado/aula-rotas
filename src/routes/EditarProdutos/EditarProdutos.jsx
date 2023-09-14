@@ -17,12 +17,14 @@ export default function EditarProduto() {
   
   return (
     <main>
+      <div class="style-product">
         <h1>DADOS DO PRODUTO</h1>
-        <p>{produto.nome}</p>
-        <p>R${produto.preco}</p>
+        <h2>{produto.nome}</h2>
+        <h2>R${produto.preco}</h2>
         <p><img src={`${produto.img}`} alt={`${produto.nome}`} /></p>
         <p>Detalhes do aparelho: </p>
         <p>Memória RAM: {produto.ram}, Peso: {produto.peso}, Câmera Frontal: {produto.camera_frontal}, Câmera Traseira: {produto.camera_traseira}</p>
+      </div>   
     </main>
   )
 }
