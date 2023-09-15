@@ -1,4 +1,4 @@
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 export default function Error() {
 
@@ -10,7 +10,7 @@ export default function Error() {
 
   return (
 
-    <div class="error">
+    <div className="error">
         <h1>Erro 404 - Página não encontrada, verifique o caminho da página desejada</h1>
         <button onClick={navigateToHome}>RETORNAR PARA HOME</button>
    

@@ -8,7 +8,7 @@ export default function Produtos() {
       <h1>Produtos</h1>
       {ListaProdutos.map(prod => (
         <div key={prod.id}>
-          <Link to={`/produtos/editar/${prod.id}`}>
+          <Link to={`/produtos/exibir/${prod.id}`}>
             {prod.nome}
           </Link>
         </div>
